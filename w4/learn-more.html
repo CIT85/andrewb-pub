@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Andrew Bier">
+        <meta name="description" content="Learn More">
+        <title>HTML Tags</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" href="imgs/favicon.png">
+    </head>
+    <body>
+    <header>
+        <img src="imgs/html5tags.png" alt="HTML5 Tags" width="900" height="300">
+        <p><a href="index.html">Back</a></p>
+        <h1>Tags I'd Like to learn more about:</h1>
+        <h3>All the tags here I found at: W3 Schools' <a href="https://www.w3schools.com/TAGs/">HTML Tags Ordered Alphabetically</a></h2>
+        <hr>
+        <ul>
+            <li><a href="#canvas">Canvas</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#script">Script</a></li>
+        </ul>
+
+    </header>
+      <p>
+        <hr>
+        <section id="canvas">
+         HTML &lt;canvas&gt; tag
+       
+            <br>
+          
+            &nbsp;&nbsp; Draws a red rectangle on the fly and shows it inside the &lt;canvas&gt; element:
+            
+            
+            <hr>
+            <code>
+                &lt;canvas id="myCanvas"&gt;
+                <br>
+                &nbsp;&nbsp; Your browser does not support the canvas tag.
+                <br>
+                    &lt;/canvas&gt;
+                <br>
+                <br>
+                    &lt;script&gt;
+                <br>
+                &nbsp;&nbsp;  let canvas = document.getElementById("myCanvas");
+                <br>
+                &nbsp;&nbsp; let ctx = canvas.getContext("2d");
+                <br>
+                &nbsp;&nbsp; ctx.fillStyle = "#FF0000";
+                <br>
+                &nbsp;&nbsp; ctx.fillRect(0, 0, 80, 80);
+                <br>
+                    &lt;/script&gt;
+            </code>
+            <hr>
+            <a href="https://www.w3schools.com/TAGs/tag_canvas.asp">W3 Schools Canvas Tag</a>
+            <hr>
+        </p>
+    </section>
+    <section id="map">
+            <hr>
+             HTML &lt;map&gt; tag
+           
+                <br>
+              
+                &nbsp;&nbsp; An image map, with clickable areas:        
+                
+                <hr>
+                <code>
+                    &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;
+                    <br>
+                    <br>
+                     &lt;map name="workmap"&gt;
+                    <br>
+                    &nbsp;&nbsp; &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+                    <br>
+                    &nbsp;&nbsp; &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+                    <br>
+                    &nbsp;&nbsp; &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt;
+                    <br>
+                    &lt;/map&gt;
+                </code>
+                <hr>
+                <a href="https://www.w3schools.com/TAGs/tag_map.asp">W3 Schools Map Tag</a>
+                <hr>
+            </p>
+        </section>
+        <section id="script">
+            <p>
+                <hr>
+                 HTML &lt;script&gt; tag
+               
+                    <br>
+                  
+                    &nbsp;&nbsp; Write "Hello JavaScript!" with JavaScript:        
+                    
+                    <hr>
+                    <code>
+                        &lt;script&gt;
+                        <br>
+                        &nbsp;&nbsp;  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                            <br>
+                            &lt;/script&gt;
+                    </code>
+                    <hr>
+                    <a href="https://www.w3schools.com/TAGs/tag_script.asp">W3 Schools Script Tag</a>
+                    <hr>
+                </p>
+            </section>
+                <footer>
+                    <a href="#">Top</a>
+                    <hr>
+                    <a href="https://github.com/CIT85" title="CIT-85 Github" target="_blank">CIT-85's Github</a>
+                    <hr>
+                </footer>
+    </body>
+</html>
