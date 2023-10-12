@@ -1,12 +1,10 @@
 html {
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body {
     background-color: black;
-    color:blanchedalmond;        
+    color:blanchedalmond;
 }
-
 a {
     color:antiquewhite;
 }
@@ -36,7 +34,19 @@ tr, td {
     align-self: center;
     width: auto;
 }
-
 .contents{
     text-align: left;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid-child-purple {
+    color: purple;
+    border: 1px dashed;
+}
+.grid-child-green {
+    color: green;
+    border: 1px dashed;
 }
