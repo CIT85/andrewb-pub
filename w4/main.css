@@ -2,17 +2,17 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body {
-    background-color: black;
-    color:blanchedalmond;
+    background-color: #1D1A24ff;
+    color:#DFCCD8ff;
 }
 a {
-    color:antiquewhite;
+    color:#B17F8Aff;
 }
 a:visited {
-    color: aqua;
+    color: #3C335Fff;
 }
 a:hover {
-    color: aquamarine
+    color: #B17F8Aff;
 }
 h1, nav{
     text-align: center;
@@ -23,16 +23,16 @@ img {
     margin-right: auto;
     max-width: 100%;
     height: auto;
+    background-color: #111321ff;
 }
 table{
-    
     align-self: center;
     width: 100%;
     padding: 10px;
     margin: 5px;
 }
 tr, td {
-    border: 1px dashed red;
+    border: 1px dashed #B17F8Aff;
     align-self: center;
     width: auto;
     padding: 3px;
@@ -53,4 +53,33 @@ tr, td {
 .grid-child-green {
     color: green;
     border: 1px dashed;
+}
+.color-pallete{
+    background-color: black;
+}
+.color-palette {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.color-box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.thistle {
+  background-color: #DFCCD8ff;
+}
+.old-rose {
+  background-color: #B17F8Aff;
+}
+.raisin-black {
+  background-color: #1D1A24ff;
+}
+.space-cadet {
+  background-color:  #3C335Fff;
+}
+.rich-black {
+  background-color: #111321ff;
 }
