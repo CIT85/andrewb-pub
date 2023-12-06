@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* START of My CSS */
+html {
+ font: 1.3rem 'Nanum Gothic', sans-serif;
+ }
+
+ /* Added background image for default b4 using media quergit pushs */
+body {
+  background-image: url("../img/starsLandscape1920x1080_16x9.jpg");
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+color: #A0C0DDff;
+background-color: #0F0B1Dff;
+min-height: 100vh;
+
+}
+
+header, footer {
+ text-align: center;
+}
+
+/* I like this size for the links in the nav and the foot */
+/* ToDo: Use Hamburger Icon for menu in Media Query */
+ nav, footer {
+  font-size: 0.85rem;
+ }
+
+
+/* made header and footer always visible and attached to the top and bottom respectivly */
+header {
+  display: block;
+  background-color: #0F0B1Dff; /* Without this the background is transparant */
+  position: sticky;
+  top: 0;
+}
+
+/* allows for fixed footer without covering part of main */
+main {
+  margin-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    background-color: #0F0B1Dff; /* Same as header */
+    bottom: 0;
+     left: 0;
+     right: 0;
+
+}
+
+/* Links */
+a {
+ color: #9C96C1ff ;
+}
+
+a:hover {
+color: #A0C0DDff;
+}
+
+a:visited {
+ color: #A0C0DDff;
+}
+
+/* Wanted all the images to the right as circles */
+figure {
+float: right;
+top: 150px;
+ width: 25%;
+}
+
+figcaption{
+ font-size: 0.25rem;
+} /* gives the credit for the img without detracting from the page */
+
+img {
+ border-radius: 50%;
+ width: 100%;
+ height: 100%;
+}
+
+/* Using the hide class to hide layout titles */
+.hide {
+ display: none;
+}
+
+h1, h2, h3, p {
+ padding: 0.33rem;
+ margin: 0.33rem;
+}
+
+
+
+h1 {
+  text-align: center;
+ font-size: 2rem;
+ font-weight: bold;
+}
+
+h2 {
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+
+h3 {
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+section, article {
+display: flex;
+flex-direction: column;
+
+font-size: 0.85rem;
+max-width: 75%;
+}
+
+
+
+
+table, td, tr, th {
+
+    border: 1px dashed #9C96C1ff;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+
+table {
+ margin-left: 25%;
+ margin-right: 25%;
+}
+/* Star Colors for the Star table */
+.blue {
+ color: blue;
+}
+.white {
+ color: white;
+}
+.yellow {
+ color:yellow;
+}
+.orange {
+ color: orange;
+}
+.red {
+ color: red;
+}
+
+/* Chose a color pallete */
+/*Pallete CSS HEX */
+/*
+--powder-blue: #A0C0DDff;
+--cool-gray: #9C96C1ff;
+--delft-blue: #1B3065ff;
+--oxford-blue: #0F1635ff;
+--rich-black: #0F0B1Dff;
+ */
+.powder-blue,
+ .cool-gray,
+ .delft-blue,
+ .oxford-blue,
+ .rich-black {
+  display: block;
+  width: 19%;
+  height: 250px;
+  border-radius: 25%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+ }
+
+.powder-blue p,
+ .cool-gray p,
+ .delft-blue p,
+ .oxford-blue p,
+ .rich-black p {
+  margin-top: 33%;
+ }
+
+.powder-blue {
+ background-color: #A0C0DDff;
+ color: #0F0B1Dff;
+ }
+
+.cool-gray {
+ background-color: #9C96C1ff;
+ color: #0F0B1Dff;
+}
+
+.delft-blue {
+ background-color: #1B3065ff;
+ color: #9C96C1ff;
+ border: 1px solid #A0C0DDff;
+}
+
+.oxford-blue {
+ background-color: #0F1635ff;
+ color: #9C96C1ff;
+ border: 1px solid #9C96C1ff;
+}
+
+.rich-black {
+ background-color: #0F0B1Dff;
+ color: #A0C0DDff;
+ border: 1px solid #A0C0DDff;
+}
+
+/* || XS */
+@media screen and (max-width: 576px) {
+  body{
+    /* smaller background that is a portrait */
+  background-image: url("../img/starsPortrait1000x1333.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+header, footer, nav {
+  font-size: small;
+}
+h1, p  {
+  text-align: center;
+}
+/* Remove the images to reduce clutter */
+img {
+  display: none;
+}
+figcaption {
+  display: none;
+}
+
+/* Reduce Table to fit better */
+table, td, tr, th {
+
+  font-size:small;
+  padding: 0;
+  text-align: center;
+
+  margin-right: 50%;
+
+}
+
+section, article {
+font-size: 0.75rem;
+max-width: 100%;
+}
+}
+
+/* pretty much the same as XS */
+/* || SMALL */
+@media screen and (min-width: 576px) {
+    body{
+    /* smaller background that is a portrait */
+  background-image: url("../img/starsPortrait1000x1333.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header, footer, nav {
+  font-size: small;
+}
+h1, p  {
+  text-align: center;
+}
+/* Remove the images to reduce clutter */
+img {
+  display: none;
+}
+figcaption {
+  display: none;
+}
+
+/* Reduce Table to fit better */
+table, td, tr, th {
+
+  font-size:small;
+  padding: 0;
+  text-align: center;
+
+  margin-right: 50%;
+
+}
+
+section, article {
+font-size: 0.75rem;
+max-width: 100%;
+}
+}
+
+/* reintroduce images, and increase table font */
+/* || MEDIUM */
+@media screen and (min-width: 768px) {
+  header, footer, nav {
+  font-size: medium;
+}
+img {
+  display: block;
+}
+figcaption {
+  display:inline;
+}
+
+  table, td, tr, th {
+    font-size:medium;
+    padding: 0.5rem;
+
+}
+}
+
+/* || LARGE */
+@media screen and (min-width: 992px) {
+ body{
+/* Switch to larger BG img*/
+    background-image: url("../img/starsLandscape1920x1080_16x9.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+}

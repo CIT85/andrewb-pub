@@ -1,15 +1,10 @@
 html {
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    
 }
 body {
     background-color: black;
-    
-  
-    color:blanchedalmond;
-        
+    color:blanchedalmond;        
 }
 
 a {
@@ -21,3 +16,4 @@ a:visited {
 a:hover {
     color: aquamarine
 }
+
