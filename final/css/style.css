@@ -148,6 +148,10 @@ table {
  color: red;
 }
 
+form {
+  border: 1px solid #1B3065ff;
+}
+
 /* Chose a color pallete */
 /*Pallete CSS HEX */
 /*
